@@ -116,6 +116,16 @@
                                                 <div class="cartao__conteudo__pergunta"> <p>O que é JavaScript?</p></div>
                                                 <div class="cartao__conteudo__resposta"><p>o JavaScript é uma linguagem de programação</p> </div>
                                                 </div>
+                                                <script>
+                                                    // Seleciona todos os cartões
+                                                    document.querySelectorAll('.cartao').forEach(cartao => {
+                                                    // Adiciona o evento de clique
+                                                    cartao.addEventListener('click', () => {
+                                                    // Alterna a classe `is-flipped` no cartão ao ser clicado
+                                                    cartao.classList.toggle('is-flipped');
+                                                    });
+                                                    });
+                                                    </script>
                                                 </article>
 
 </section>
